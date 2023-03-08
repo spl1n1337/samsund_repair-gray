@@ -1,0 +1,122 @@
+.hero.category__hero {
+    & .hero__content {
+        width: 55%;
+        &-title {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        &-descr {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            // text-align: justify;
+        }
+    }
+    & .hero__pic {
+        width: 400px !important;
+    }
+}
+
+.benefints.benefints__prices.category__hero {
+    & .accordion {
+        width: 100%;
+        & .h4__title {
+            align-self: baseline;
+        }
+        & th:last-of-type {
+            text-align: right;
+        }
+    }
+}
+
+.defects__wrapper h2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    color: rgb(45, 78, 171);
+    padding-bottom: 30px;
+}
+
+.defects__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 10px;
+    padding-top: 45px;
+    margin-bottom: 100px;
+    & .defects__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: #000000;
+        position: relative;
+        text-decoration: none !important;
+        &:hover {
+            transform: scale(1.03);
+        }
+        & .defects__img {
+            text-align: right;
+            min-width: 80px;
+            box-sizing: border-box;
+            padding-right: 15px;
+            & img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        & .defects__info {
+            & .defects__title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.1875;
+                color: #2d4eab;
+                padding-bottom: 21px;
+            }
+            & .defects__descr {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.3125;
+                color: #000000;
+            }
+            & .defects__price {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.3125;
+                color: #2d4eab;
+                padding-top: 12px;
+            }
+        }
+    }
+}
+
+
+.land__call {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px !important;
+    border-bottom: 1px solid black;
+    &-text {
+        flex: 1;
+        margin: 60px 0;
+        & h3 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        & p {
+            color: #828382;
+            font-size: 15px;
+        }
+    }
+    &-tel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 28px 0 0;
+        border-left: 1px solid #dbdbdb;
+    }
+}

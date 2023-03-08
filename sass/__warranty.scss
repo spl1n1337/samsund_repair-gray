@@ -1,0 +1,15 @@
+.warranty__promo {
+    & h3 {
+        font-size: 19px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #2d4eab;
+        padding-bottom: 30px;
+    }
+    & .diagnostic__promo-img {
+        border-bottom: none !important;
+        margin-bottom: 30px !important;
+    }
+}

@@ -1,0 +1,93 @@
+table.accordion-item__content {
+    text-align: left;
+    width: 100%;
+    & th {
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: #696969;
+        line-height: 20px;
+    }
+    & td.price {
+        text-align: right;
+    }
+    & tr:first-of-type {
+        border-bottom: 1px solid black;
+    }
+    & tr td{
+        padding-bottom: 12px;
+    }
+    & .fr {
+        padding-top: 20px;
+    }
+    & tr:hover {
+        & td, td a {
+            color: #2d4eab;
+            transition: all .3s ease-out 0s;
+        }
+    }
+}
+
+.benefints__prices {
+    & .accordion {
+        width: 50%;
+        margin-right: 10%;
+    }
+    & .benefints__img {
+        margin-top: 0;
+        width: 40%;
+    }
+}
+
+.h4__title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: #2d4eab;
+}
+
+.sidebar {
+    &__tel {
+        margin-bottom: 20px;
+    }
+    &__promo-text {
+        margin-top: 25px;
+    }
+    & .question {
+        margin-bottom: 50px;
+    }
+    &__list {
+        & li {
+            margin-bottom: 12px;
+            margin-right: 35px;
+            width: 40%;
+            display: inline-block;
+            vertical-align: middle;
+            &:hover {
+                color: #2d4eab;
+                transform: scale(1.01);
+                & a {
+                    color:#2d4eab;
+                }
+            }
+            & a {
+                position: relative;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: -14px;
+                    width: 13px;
+                    height: 14px;
+                    background: url('../img/arrow.svg') center (center / cover) no-repeat;
+                    // transform: translate(-20px, -1px);
+                }
+            }
+        }
+    }
+}
+
+.hero__content-title.prices__title {
+    padding-left: 0;
+}

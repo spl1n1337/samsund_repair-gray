@@ -1,0 +1,256 @@
+
+.menu-trigger {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .menu-trigger.active .menu-button > span {
+    background-color: transparent;
+  }
+  .menu-trigger.active .menu-button > span:before,
+  .menu-trigger.active .menu-button > span:after {
+    top: 0;
+  }
+  .menu-trigger.active .menu-button > span:before {
+    transform: rotate(45deg);
+  }
+  .menu-trigger.active .menu-button > span:after {
+    transform: rotate(-45deg);
+  }
+  .menu-trigger.active .menu-button.left-cross > span:before {
+    transform: rotate(-45deg);
+  }
+  .menu-trigger.active .menu-button.left-cross > span:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-button > span,
+  .menu-button > span:after,
+  .menu-button > span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    border-radius: 1px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-button > span {
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    top: 45%;
+  }
+  .menu-button > span:before, .menu-button > span:after {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .menu-button > span:before {
+    top: -360%;
+  }
+  .menu-button > span:after {
+    top: 360%;
+}
+
+.menu-trigger {
+    display: none;
+    z-index: 2000;
+}
+
+
+@media (max-width: 992px) {
+    .benefints .form__input {
+        margin-right: 0;
+        margin-bottom: 20px;
+        min-width: 218px;
+    }
+    .header .container .nav {
+        display: none;
+    }    
+    .break {
+        display: none;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+        background: #f6f6f6;
+        z-index: 1000;
+    }
+    .header__top-logo {
+        max-width: 180px;
+    }
+    .header__top {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .header__top-promo {
+        display: none !important;
+    }
+    .header__top-promo-tel {
+        display: none !important;
+    }
+    .menu-trigger {
+        display: block !important;
+    }
+    .header .container {
+        position: relative;
+        & .nav {
+            position: fixed;
+            z-index: 300;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #f6f6f6;
+            & ul {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    .hero__content-title {
+        font-size: 36px !important;
+    }
+    .hero__content ul li {
+        font-size: 24px;
+    }
+    .accordion-item__trigger {
+        font-size: 26px;
+    }
+    
+    .trust__wrapper {
+        justify-content: space-evenly;
+    }
+    .trust__title, .certificate-title, .about__title h2 {
+        font-size: 36px;
+    }
+
+    .hero.category__hero .hero__content-title {
+        font-size: 36px !important;
+    }
+    .hero__content ul li form .tel {
+        margin-bottom: 20px;
+    }
+    .benefints__prices .accordion {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+// -------------------≥768px
+@media (max-width:768px) {
+    .hero__pic {
+        display: none;
+    }
+    .footer__contacts {
+        & .footer__contacts-link.header__top-promo-tel, .footer__contacts-link-descr.header__top-promo-tel {
+            display: block !important;
+        }
+    }
+    .footer__category,.footer__clients {
+        display: none;
+    }
+    .footer .container {
+        justify-content: center;
+    }
+    .footer__contacts-title {
+        text-align: center;
+    }
+    .footer__contacts-links {
+        align-items: center;
+    }
+    .benefints__img {
+        display: none;
+    }
+    .accordion {
+        width: 100%;
+    }
+
+    .equipment__title {
+        font-size: 32px;
+    }
+
+    .equipment__item {
+        max-width: 30%;
+        & .text {
+            display: none;
+        }
+        &.smartphone {
+            max-width: 30%;
+            min-height: auto;
+            & img {
+                width: 150px;
+                // margin-top: 60px;
+            }
+        }
+    }
+    .about__img {
+        display: none;
+    }
+    .about__wrapper .accordion {
+        padding-right: 5vw;
+    }
+    .hero.category__hero .hero__content {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .defects__items {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .popular__phone__models__wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------≥576px
+@media (max-width: 576px) {
+    .form.main__page {
+        & .form__input, button.form__button {
+            width: 289.63px;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .equipment__item.smartphone {
+        max-width: 45%;
+        height: 140px;
+    }
+    .equipment__item {
+        max-width: 45%;
+        height: 140px;
+        
+        // & .name img {
+            // margin-top: 10px !important;
+
+        // }
+    }
+
+    .equipment__item .name img {
+        margin: 0 auto !important;
+        width: 100px !important;
+        margin-top: 5px !important;
+    }
+    .about__title h2, .certificate-title, .trust__title {
+        font-size: 28px;
+    }
+}

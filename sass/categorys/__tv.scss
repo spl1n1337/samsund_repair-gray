@@ -1,0 +1,45 @@
+.hero.category__hero.tv {
+    & .hero__content ul li {
+        font-size: 24px;
+    }
+}
+
+.defects__items.tv {
+    align-items: center;
+    & .defects__img {
+        min-width: none;
+        width: 65px;
+        height: 65px;
+        padding-right: 15px;
+        margin-right: 25px;
+        & img {
+            max-width: none !important;
+            width: 100% !important;
+        }
+    }
+}
+
+.hero.tv__model {
+    & .hero__content ul li {
+        font-size: 24px;
+        text-align: justify;
+    }
+    & .hero__pic {
+        min-width: 500px;
+        margin-left: 50px;
+    }
+}
+
+.popular__phone__models__wrapper.tv {
+    & .popular__phone-set {
+        &-item {
+            min-height: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.popular__phone__models.tv {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
